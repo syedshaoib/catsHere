@@ -1,0 +1,299 @@
+*{
+  font-family: sans-serif;
+}
+body{
+  margin: 0px;
+}
+html{
+  margin:0px;
+color:rgba(255, 0, 0, 0.5);
+}
+
+.top{
+  margin:0px;
+
+  background-position: center center;
+
+  background-size: cover;
+
+  background-image:url('cat.jpg');
+  background-attachment:scroll;
+
+
+  height:100vh;
+}
+.nav-img>h2{
+  color:#fff;
+
+
+
+}
+.nav-bar{
+  display: flex;
+
+margin:0px 0px 0px 150px;
+}
+
+.nav-link{
+margin-top:10px;
+}
+.nav-link >ul {
+
+display: inline-block;
+margin-top:15px;
+
+
+}
+.nav-link >ul>li {
+
+display: inline-block;
+color:#fff;
+margin-right:15px;
+
+
+}
+.nav-link >ul>li >a{
+
+text-decoration: none;
+color:#fff;
+font-size: 19px;
+
+}
+.nav-link>ul>li::after{
+  width:0px;
+  display: block;
+
+  content:' ';
+  background: yellow;
+  height:2px;
+
+margin:auto;
+}
+.nav-link>ul>li:hover::after{
+  width:100%;
+}
+.butt{
+
+  padding:10px 20px;
+  background-color: green;
+  border:0px;
+  cursor: pointer;
+  color:#fff;
+
+}
+.butt:hover{
+  opacity: 0.7;
+}
+.nav-link  .butt{
+    position: absolute;
+    right:100px;
+margin-top:10px;
+}
+.tit{
+  margin-left:150px;
+  font-size: 1.9rem;
+}
+.tit h1{
+  color:yellow;
+
+}
+.tit span{
+  color:white;
+
+}
+ .vertical .fab:hover{
+  opacity: 0.7;
+}
+.exp{
+  padding:9px 22px ;
+  background-color: yellow;
+  border:none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:white;
+  transition: 0.4s;
+}
+.exp:hover{
+  opacity: 0.7;
+
+}
+.vertical{
+
+  height:100%;
+
+  position: absolute;
+  top:0px;
+  left:0px;
+
+}
+.search{
+  background-color: black;
+  height:50%;
+
+
+}
+.search > .fab{
+margin-top:10px;
+
+
+}
+.fa-search{
+  color:white;
+  margin-top:20px;
+
+pointer:cursor;
+
+}
+.links{
+  background-color: green;
+  height:50%;
+
+  display: flex;
+  flex-direction: column;
+}
+.links > .fab {
+  margin:5px 0px 30px 3px;
+  color:white;
+pointer:cursor;
+
+}
+.ch{
+z-index: 10;
+position: absolute;
+top:10px;
+right:10px;
+width:60px;
+height:60px;
+border-radius: 50%;
+opacity: 0;
+z-index: 5;
+cursor: pointer;
+}
+.close{
+  position: absolute;
+  top:10px;
+  right:10px;
+  opacity: 0;
+}
+.barr{
+  position: absolute;
+  top:10px;
+  right:10px;
+  opacity: 0;
+    pointer:cursor;
+}
+
+
+@media (max-width:800px)
+{
+.links .fab:hover{
+  opacity: 0.7;
+}
+.barr{
+  opacity: 1;
+  color:white;
+}
+.nav-link>ul>li:hover::after{
+ width:45px;
+ position: absolute;
+ left:40px;
+}
+
+  .ch{
+
+    position: absolute;
+  z-index: 3;
+
+  }
+
+
+  .tit h1{
+    font-size: 1.9rem;
+  }
+  .tit{
+    margin:70px 0px 0px 45px;
+
+  }
+  .exp{
+    font-size:1.2rem;
+  }
+
+  .nav-bar ul li{
+    display: block;
+
+  }
+  .nav-bar ul {
+    display: block;
+    position: relative;
+  }
+.nav-link{
+  display: block;
+
+margin:0px;
+  position:absolute;
+  right:0px;
+  top:0px;
+
+   text-align: left;
+   width:50%;
+   height:100%;
+   background-color: black;
+}
+.nav-bar .butt{
+  position: relative;
+  left:35px;
+
+}
+.nav-bar{
+visibility: hidden;
+
+ background-color: black;
+}
+
+
+.ch:checked~ .nav-bar{
+  visibility: visible;
+
+
+}
+.ch:checked~ .barr{
+  opacity: 0;
+}
+.ch:checked~.close{
+opacity: 1;
+  z-index: 1;
+  color: white;
+}
+}
+.top{
+  margin-bottom:50px;
+
+
+}
+#test img{
+  width:250px;
+  height:250px;
+  clip-path:circle(50%);
+}
+#test {
+
+
+
+}
+ h1{
+  color:white;
+  font-family: sans-serif;
+
+
+}
+#test{
+align-items: center;
+text-align: center;
+
+margin:auto;
+padding:100px 10px;
+  background-color:#947867;
+}
+.carousel-indicators{
+bottom:-70px;
+}
